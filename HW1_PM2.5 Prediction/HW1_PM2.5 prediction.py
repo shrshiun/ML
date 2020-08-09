@@ -3,8 +3,9 @@ import pandas as pd
 import numpy as np
 import csv
 # load dataset
-train_data = pd.read_csv("train.csv", usecols=range(3, 27), encoding='big5')
-test_data = pd.read_csv("test.csv", usecols=range(
+train_data = pd.read_csv("./dataset/train.csv",
+                         usecols=range(3, 27), encoding='big5')
+test_data = pd.read_csv("./dataset/test.csv", usecols=range(
     2, 11), header=None, encoding='big5')
 
 # preprocess(1)
